@@ -9,8 +9,10 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
     /* dark #0B2545 */
 }
+
 
 
 /* ----------navbar------------- */
@@ -22,7 +24,7 @@ nav {
 }
 
 nav ul {
-    background-color: #13315C;
+    background-color: #B80C09;
     width: 100%;
     list-style: none;
     display: flex;
@@ -45,17 +47,17 @@ nav a {
 
 nav a:hover {
     background-color: #F1F6F7;
-    color: #13315C;
+    color: #B80C09;
 }
 
 .logo:hover {
-    background-color: #13315C;
+    background-color: #B80C09;
     color: white;
 }
 
 nav .c {
-    background-color: #8DA9C4;
-    color: #13315C;
+    background-color: #E5E7E6;
+    color: #B80C09;
 }
 
 nav li:first-child {
@@ -72,7 +74,7 @@ nav li:first-child {
     height: 100vh;
     width: 350px;
     z-index: 999;
-    background-color: #13315C;
+    background-color: #B80C09;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -85,13 +87,14 @@ nav li:first-child {
     width: 100%;
 }
 
-
-
 /* ---------- contact page body ------------- */
 
 .contactUs {
     position: relative;
+    width: 100%;
+    height: 100%;
     padding: 40px 100px;
+    min-height: 100vh;
 }
 
 .contactUs .title {
@@ -99,6 +102,7 @@ nav li:first-child {
     justify-content: center;
     align-items: center;
     color: #0B2545;
+    
 }
 
 .form {
@@ -132,22 +136,20 @@ nav li:first-child {
 }
 
 .contact h3 {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.4em;
     margin-bottom: 10px;
-    color: #13315C;
+    color: #B80C09;
 }
 
 .formBox {
     position: relative;
     width: 100%;
-
 }
 
 .formBox .row50 {
     display: flex;
     gap: 20px;
-    max-width: 400px;
 }
 
 .formBox .row100 .inputBox {
@@ -155,7 +157,7 @@ nav li:first-child {
 }
 
 .sendButton {
-    background-color: #0B2545;
+    background-color: #B80C09;
     color: #EEF4ED;
     height: 30px;
     border-radius: 5px;
@@ -165,7 +167,14 @@ nav li:first-child {
 
 .sendButton :hover {
     background-color: #8DA9C4;
+    color: #B80C09;
+}
+
+.inputBox span{
     color: #13315C;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
 }
 
 .inputBox {
@@ -189,31 +198,16 @@ nav li:first-child {
     font-size: 1.1em;
     outline: none;
     border: 1px solid #8DA9C4;
+    resize: none;
     min-height: 220px;
     margin-bottom: 10px;
 }
-
-/* .inputBox input[type="submit"]{
-    background-color: #0B2545;
-    color: #EEF4ED;
-    border: none;
-    font-size: 1.1em;
-    max-width: 120px;
-    font-weight: 500;
-    cursor: pointer;
-
-}
-.inputBox input[type="submit"]{
-
-    font-weight: 900;
-    font-size: 1.5em;
-} */
 
 .btn {
 
     font-size: 18px;
     font-weight: 400;
-    background: #0B2545;
+    background: #B80C09;
     width: 160px;
     padding: 10px 20px;
     text-align: center;
@@ -230,9 +224,9 @@ nav li:first-child {
 .btn:focus,
 .btn:active {
     box-shadow: 0 0px 20px rgba(45, 115, 136, 0.1);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    background-color: #8DA9C4;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: #B80C09;
 }
 
 
@@ -245,6 +239,7 @@ nav li:first-child {
 
 .info h3 {
     color: white;
+    font-weight: 700;
 }
 
 .info .infoBox div {
@@ -253,21 +248,43 @@ nav li:first-child {
     margin-bottom: 10px;
 }
 
+
+
 .info .infoBox div span {
     min-width: 40px;
     height: 40px;
-    background-color: #8DA9C4;
+    background-color:  #B7B5B3;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
     border-radius: 50%;
-    margin-right: 15px;
+    margin: 0px 20px;
 }
+
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    margin-left: 25px;
+}
+.sci li a:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 
 .info div a {
     text-decoration: none;
     color: #EEF4ED;
+}
+.info div a:hover {
+    text-decoration: none;
+    color: #EEF4ED;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .menu-button {
@@ -283,15 +300,20 @@ nav li:first-child {
     .menu-button {
         display: block;
         color: #F1F6F7;
+        cursor: pointer;
+        background-color: #B80C09; /* Piros háttérszín */
     }
+    .menu-button:hover {
+        display: block;
+      
+        background-color: #B80C09; /* Piros háttérszín */
 
-    .menu-button :hover {
-        background-color: #13315C;
     }
 
     .contactUs {
         padding: 20px;
     }
+ 
 
     .box {
         grid-template-columns: 1fr;
@@ -353,7 +375,7 @@ input, select {
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -396,4 +418,51 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+
+.map{
+    border:0;
+}
+
+/* ------ service card --- */
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+.card{
+    width:325px;
+    background-color: #f2f2f2 ;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+
+}
+.card-content p{
+    color: #888685;
+    font-size: 16px;
+    margin-bottom: 16px;
+    line-height: 1.3;
+    
+}
+.card-content .btn{
+    margin-top: 16px;
+    
 }
