@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
     <title>Időpont Foglalás</title>
 </head>
 <body>
@@ -29,97 +30,145 @@
 
                 </ul>
             </nav>
-        <h1>Időpont Foglalás és Nyitvatartás</h1>
+
     </header>
 
     <main>
-        <form>
-            <label for="lastName">Vezetéknév:</label>
-            <input type="text" id="lastName" name="lastName" required>
+        <div>
+            <div class="backimgPos">
+                <img id="backimg"  src="../images/DSC05775.jpg">
+            </div>
+        </div>
 
-            <label for="firstName">Keresztnév:</label>
-            <input type="text" id="firstName" name="firstName" required>
+        <div id="formtable">
+            <div class="box">
+                <div id="formbackg">
+                    <form>
+                        <div class="name">
+                            <div >
+                                <label for="lastName">Vezetéknév:</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Kiss" required>
+                            </div>
+                           <div class="formRightElement">
+                               <label for="firstName">Keresztnév:</label>
+                               <input type="text" id="firstName" name="firstName" placeholder="János" required>
+                           </div>
+                        </div>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+                        <div class="name">
+                            <div>
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" placeholder="info@gokart.com" required>
+                            </div>
+                            <div class="formRightElement" >
+                                <label for="phone">Telefonszám:</label>
+                                <input type="tel" id="phone" name="phone"  value="+36" required>
+                            </div>
+                        </div>
 
-            <label for="phone">Telefonszám:</label>
-            <input type="tel" id="phone" name="phone" value="+36" required>
+                        <div class="name">
+                            <div>
+                                <label for="headcount">Létszám (1-7):</label>
+                                <input type="number" id="headcount" name="headcount" value="1" min="1" max="7" required>
+                            </div>
 
-            <label for="headcount">Létszám (1-7):</label>
-            <input type="number" id="headcount" name="headcount" min="1" max="7" required>
+                            <div class="formRightElement">
+                                <label for="reservationDateTime">Foglalási időpont:</label>
+                                <input type="datetime-local" id="reservationDateTime" name="reservationDateTime" required>
+                            </div>
 
-            <label for="reservationDateTime">Foglalási időpont:</label>
-            <input type="datetime-local" id="reservationDateTime" name="reservationDateTime" required>
+                        </div>
 
-            <fieldset>
-                <legend>Válassz Gokartot:</legend>
-                <div class="form-group">
-                    <label for="option1">Gyerek Gokart</label>
-                    <input type="radio" id="option1" name="options" value="option1">
+
+                        <fieldset>
+                            <legend>Válassz Gokartot:</legend>
+                            <div class="form-group">
+                                <label for="option1">Gyerek Gokart</label>
+                                <div class="inp">
+                                    <input type="radio" id="option1" name="options" value="option1">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="option2">Felnőtt Gokart</label>
+                                <div class="inp">
+                                    <input type="radio" id="option2" name="options" value="option2">
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="option3">Verseny Gokart</label>
+                                <div class="inp">
+                                    <input type="radio" id="option3" name="options" value="option3">
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+
+                        <label for="terms" class="checkbox-label">
+                            <div>
+                                <input type="checkbox" id="terms" name="terms" required>
+                            </div>
+                            <div id="feltetel">
+                                <p>Elfogadom a <a href="#">foglalási feltételeket</a></p>
+                            </div>
+                        </label>
+
+                        <button class="btn" type="submit">Küldés</button>
+                        <button class="btn" type="reset">Alaphelyzet</button>
+                    </form>
                 </div>
-
-                <div class="form-group">
-                    <label for="option2">Felnőtt Gokart</label>
-                    <input type="radio" id="option2" name="options" value="option2">
-                </div>
-
-                <div class="form-group">
-                    <label for="option3">Verseny Gokart</label>
-                    <input type="radio" id="option3" name="options" value="option3">
-                </div>
-            </fieldset>
-
-
-            <button type="submit">Küldés</button>
-            <button type="reset">Alaphelyzet</button>
-        </form>
-
-        <table>
-            <thead>
-            <tr>
-                <th>Nap</th>
-                <th>Nyitás</th>
-                <th>Zárás</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td headers="day">Hétfő</td>
-                <td headers="start">9:00</td>
-                <td headers="end">18:00</td>
-            </tr>
-            <tr>
-                <td headers="day">Kedd</td>
-                <td headers="open">9:00</td>
-                <td headers="close">18:00</td>
-            </tr>
-            <tr>
-                <td headers="day">Szerda</td>
-                <td headers="open">9:00</td>
-                <td headers="close">18:00</td>
-            </tr>
-            <tr>
-                <td headers="day">Csütörtök</td>
-                <td headers="open">9:00</td>
-                <td headers="close">18:00</td>
-            </tr>
-            <tr>
-                <td headers="day">Péntek</td>
-                <td headers="open">9:00</td>
-                <td headers="close">17:00</td>
-            </tr>
-            <tr>
-                <td headers="day">Szombat</td>
-                <td headers="open">10:00</td>
-                <td headers="close">14:00</td>
-            </tr>
-            <tr>
-                <td headers="day" colspan="2">Vasárnap</td>
-                <td headers="close" colspan="2">Zárva</td>
-            </tr>
-            </tbody>
-        </table>
+            </div>
+            <div class="box">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Nap</th>
+                        <th>Nyitás</th>
+                        <th>Zárás</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td headers="day">Hétfő</td>
+                        <td headers="start">9:00</td>
+                        <td headers="end">18:00</td>
+                    </tr>
+                    <tr>
+                        <td headers="day">Kedd</td>
+                        <td headers="open">9:00</td>
+                        <td headers="close">18:00</td>
+                    </tr>
+                    <tr>
+                        <td headers="day">Szerda</td>
+                        <td headers="open">9:00</td>
+                        <td headers="close">18:00</td>
+                    </tr>
+                    <tr>
+                        <td headers="day">Csütörtök</td>
+                        <td headers="open">9:00</td>
+                        <td headers="close">18:00</td>
+                    </tr>
+                    <tr>
+                        <td headers="day">Péntek</td>
+                        <td headers="open">9:00</td>
+                        <td headers="close">17:00</td>
+                    </tr>
+                    <tr>
+                        <td headers="day">Szombat</td>
+                        <td headers="open">10:00</td>
+                        <td headers="close">14:00</td>
+                    </tr>
+                    <tr>
+                        <td headers="day" colspan="2">Vasárnap</td>
+                        <td headers="close" colspan="2">Zárva</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; A projectet készítette Kecskeméti Attila & Sinka Zoltán web tervezés 2024</p>
