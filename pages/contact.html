@@ -1,100 +1,118 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapcsolat</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
-            <nav>
-                <ul class="nav">
-                    <li><a href="index.html" class="logo"> <h2>Gokart</h2></a></li>
-                    <li class="hideOnMobile"><a href="booking.html">Időpont foglalás</a></li>
-                    <li class="hideOnMobile"><a href="contact.html" class="c">Kapcsolat</a></li>
-                    <li class="hideOnMobile"><a href="champs.html">Versenyek</a></li>
-                    <li class="hideOnMobile"><a href="service.html">Szolgáltatások</a></li>
-                    <li class="menu-button" onclick="showSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="24" style="color: azure;" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
-                <ul class="sidebar">
-                    <li onclick="hideSidebar()"> <a><h2><svg xmlns="http://www.w3.org/2000/svg" height="24" style="color: bisque;" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></h2></a></li>
-                    <li><a href="booking.html">időpont foglalás</a></li>
-                    <li><a href="contact.html" class="c">Kapcsolat</a></li>
-                    <li><a href="champs.html">Versenyek</a></li>
-                    <li><a href="service.html">Szolgáltatások</a></li>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html" class="logo">
+                        <h2>Gokart</h2>
+                    </a></li>
+                <li class="hideOnMobile"><a href="booking.html">Időpont foglalás</a></li>
+                <li class="hideOnMobile"><a href="contact.html" class="c">Kapcsolat</a></li>
+                <li class="hideOnMobile"><a href="champs.html">Versenyek</a></li>
+                <li class="hideOnMobile"><a href="service.html">Szolgáltatások</a></li>
+                <li><button class="menu-button" onclick="showSidebar()"><img src="..\images\Icons\menu.svg"
+                            alt="menu icon"></button></li>
+            </ul>
+            <ul class="sidebar">
+                <li> <button class="menu-button" onclick="hideSidebar()">
+                        <h2><img src="..\images\Icons\close.svg" alt="close menu"></h2>
+                    </button></li>
+                <li><a href="booking.html">Időpont foglalás</a></li>
+                <li><a href="contact.html" class="c">Kapcsolat</a></li>
+                <li><a href="champs.html">Versenyek</a></li>
+                <li><a href="service.html">Szolgáltatások</a></li>
 
-                </ul>
-            </nav>
-
-
-           
+            </ul>
+        </nav>
     </header>
 
-<div class="contactUs">
-    <div class="title">
-        <h2>Get in Touch</h2>
-    </div>
-    <div class="box">
-        <div class="contact form">
-            <h3>Küldj üzenetet</h3>
-            <!-- form box -->
-            <form>
-                <div class="formBox">
-                    <div class="row50">
-                        <div class="inputBox">
-                            <span>Vezeték név</span>
-                            <input type="text" placeholder="Kovács">
-                        </div>
-                        <div class="inputBox">
-                            <span>Kereszt név</span>
-                            <input type="text" placeholder="János">
-                        </div>
-                    </div>
-                    <div class="row50">
-                        <div class="inputBox">
-                            <span>E-mail cím</span>
-                            <input type="text" placeholder="kovacs@valami.com">
-                        </div>
-                        <div class="inputBox">
-                            <span>Telefon</span>
-                            <input type="text" placeholder="+36 30 555 11 44">
-                        </div>
-                    </div>
-                    <div class="row100">
-                        <div class="inputBox">
-                            <span>Üzenet</span>
-                            <textarea placeholder="..."></textarea>
-                        </div>
-                    </div >
-                    <div>
-                        <button class="btn" >küldés</button>
-                    </div>
-                </div>
-            </form>
+    <div class="main">
+        <div class="title">
+            <h2>Lépj kapcsolatba velünk!</h2>
         </div>
-        <!-- info box -->
-        <div class="contact info">
-            <h3>Kapcsolat</h3>
-            <div class="infoBox">
-                <div> 
-                    <span><svg xmlns="http://www.w3.org/2000/svg"  height="24" viewBox="0 -960 960 960" width="24"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg></span>
-                    <p><strong> 6700. Szeged,</strong> <br> Valahol u. 118/b</p>
-                </div>
-                <div> 
-                    <span><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></span>
-                    <a href="mailto:info@gokard.com">info@gokard.com</a>
-                </div>
-                <div> 
-                    <span><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200v120h400v-120H280Zm200 100q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM280-320h400v-400H280v400Zm0-480h400v-40H280v40Zm0 560v120-120Zm0-560v-40 40Z"/></svg></span>
-                    <p>+36 30 555 14 59</p>
-                </div>
+        <div class="box">
+            <div class="contact form">
+                <h3>Küldj üzenetet</h3>
+                <!-- form box -->
+                <form>
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Vezeték név</span>
+                                <input type="text" placeholder="Minta" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>Kereszt név</span>
+                                <input type="text" placeholder="János" required>
+                            </div>
+                        </div>
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>E-mail cím</span>
+                                <input type="email" placeholder="minta@valami.com"
+                                    pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>Telefon</span>
+                                <input type="tel" placeholder="+36301234567"
+                                    pattern="^\+(?:36)(?:20|30|70)\d{3}\d{2}\d{2}$" required>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Üzenet</span>
+                                <textarea type="text" placeholder="ide irhatja üzenetét..." required></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" id="submint" href="#" class="btn"> Küldés</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-
+            <!-- info box -->
+            <div class="contact info">
+                <h3>Kapcsolat</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><img src="..\images\Icons\location.svg" alt="location icon"></span>
+                        <p><strong> 6700. Szeged,</strong> <br> Valahol u. 118/b</p>
+                    </div>
+                    <div>
+                        <span><img src="..\images\Icons\mail.svg" alt="mail icon"></svg></span>
+                        <a href="mailto:info@gokard.com">info@gokard.com</a>
+                    </div>
+                    <div>
+                        <span><img src="..\images\Icons\phone.svg" alt="phone icon"></span>
+                        <a href="tel:+36305554444">+36 30 555 44 44</a>
+                    </div>
+                </div>
+                <!-- Social Media  -->
+                <ul class="sci">
+                    <li><a href=""><img src="..\images\Icons\logo-facebook.svg" alt="logo-facebook"></a></li>
+                    <li><a href=""><img src="..\images\Icons\logo-discord.svg" alt="logo-discord"></a></li>
+                    <li><a href=""><img src="..\images\Icons\logo-instagram.svg" alt="logo-instagram"></a></li>
+                    <li><a href=""><img src="..\images\Icons\logo-linkedin.svg" alt="logo-linkedin"></a></li>
+                    <li><a href=""><img src="..\images\Icons\logo-twitter.svg" alt="logo-twitter"></a></li>
+                </ul>
+            </div>
+            <div class="contact map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2759.013828919266!2d20.143835076053076!3d46.2499528806708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4744886ff749d09b%3A0x3c136b11e025c582!2sUniversity%20of%20Szeged!5e0!3m2!1sen!2shu!4v1711269939941!5m2!1sen!2shu"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <div class="contact map"><img src="../images/terkep.png" alt="Italian Trulli"></div>
     </div>
-</div>
 
     <footer>
         <p>&copy; A projectet készítette Kecskeméti Attila & Sinka Zoltán web tervezés 2024</p>
@@ -102,4 +120,5 @@
 
     <script src="../js/script.js"></script>
 </body>
+
 </html>
