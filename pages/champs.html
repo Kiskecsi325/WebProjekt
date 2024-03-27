@@ -24,8 +24,8 @@
         <ul class="sidebar">
             <li onclick="hideSidebar()"> <a><h2><svg xmlns="http://www.w3.org/2000/svg" height="24" style="color: bisque;" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></h2></a></li>
             <li><a href="booking.html">időpont foglalás</a></li>
-            <li><a href="contact.html" class="c">Kapcsolat</a></li>
-            <li><a href="champs.html">Versenyek</a></li>
+            <li><a href="contact.html" >Kapcsolat</a></li>
+            <li><a href="champs.html" class="c">Versenyek</a></li>
             <li><a href="service.html">Szolgáltatások</a></li>
 
         </ul>
@@ -42,131 +42,10 @@
 
     <div id="formtable">
         <div class="box">
-            <div id="formbackg">
-                <form>
-                    <div class="name">
-                        <div >
-                            <label for="lastName">Vezetéknév:</label>
-                            <input type="text" id="lastName" name="lastName" placeholder="Kiss" required>
-                        </div>
-                        <div class="formRightElement">
-                            <label for="firstName">Keresztnév:</label>
-                            <input type="text" id="firstName" name="firstName" placeholder="János" required>
-                        </div>
-                    </div>
 
-                    <div class="name">
-                        <div>
-                            <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" placeholder="info@gokart.com" required>
-                        </div>
-                        <div class="formRightElement" >
-                            <label for="phone">Telefonszám:</label>
-                            <input type="tel" id="phone" name="phone"  value="+36" required>
-                        </div>
-                    </div>
-
-                    <div class="name">
-                        <div>
-                            <label for="headcount">Létszám (1-7):</label>
-                            <input type="number" id="headcount" name="headcount" value="1" min="1" max="7" required>
-                        </div>
-
-                        <div class="formRightElement">
-                            <label for="reservationDateTime">Foglalási időpont:</label>
-                            <input type="datetime-local" id="reservationDateTime" name="reservationDateTime" required>
-                        </div>
-
-                    </div>
-
-
-                    <fieldset>
-                        <legend>Válassz Gokartot:</legend>
-                        <div class="form-group">
-                            <label for="option1">Gyerek Gokart</label>
-                            <div class="inp">
-                                <input type="radio" id="option1" name="options" value="option1">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="option2">Felnőtt Gokart</label>
-                            <div class="inp">
-                                <input type="radio" id="option2" name="options" value="option2">
-                            </div>
-
-                        </div>
-
-                        <div class="form-group">
-                            <label for="option3">Verseny Gokart</label>
-                            <div class="inp">
-                                <input type="radio" id="option3" name="options" value="option3">
-                            </div>
-
-                        </div>
-                    </fieldset>
-
-
-                    <label for="terms" class="checkbox-label">
-                        <div>
-                            <input type="checkbox" id="terms" name="terms" required>
-                        </div>
-                        <div id="feltetel">
-                            <p>Elfogadom a <a href="#">foglalási feltételeket</a></p>
-                        </div>
-                    </label>
-
-                    <button class="btn" type="submit">Küldés</button>
-                    <button class="btn" type="reset">Alaphelyzet</button>
-                </form>
-            </div>
         </div>
         <div class="box">
-            <table>
-                <thead>
-                <tr>
-                    <th>Nap</th>
-                    <th>Nyitás</th>
-                    <th>Zárás</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td headers="day">Hétfő</td>
-                    <td headers="start">9:00</td>
-                    <td headers="end">18:00</td>
-                </tr>
-                <tr>
-                    <td headers="day">Kedd</td>
-                    <td headers="open">9:00</td>
-                    <td headers="close">18:00</td>
-                </tr>
-                <tr>
-                    <td headers="day">Szerda</td>
-                    <td headers="open">9:00</td>
-                    <td headers="close">18:00</td>
-                </tr>
-                <tr>
-                    <td headers="day">Csütörtök</td>
-                    <td headers="open">9:00</td>
-                    <td headers="close">18:00</td>
-                </tr>
-                <tr>
-                    <td headers="day">Péntek</td>
-                    <td headers="open">9:00</td>
-                    <td headers="close">17:00</td>
-                </tr>
-                <tr>
-                    <td headers="day">Szombat</td>
-                    <td headers="open">10:00</td>
-                    <td headers="close">14:00</td>
-                </tr>
-                <tr>
-                    <td headers="day" colspan="2">Vasárnap</td>
-                    <td headers="close" colspan="2">Zárva</td>
-                </tr>
-                </tbody>
-            </table>
+
         </div>
     </div>
 </main>

@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d66aaf8-6c15-421c-8f17-0f314f65f058" name="Changes" comment="bookingfinish">
-      <change afterPath="$PROJECT_DIR$/images/DSC04688.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/DSC05775.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/booking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/champs.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/champs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,21 +28,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.booking.html.executor": "Run",
-    "JavaScript Debug.races.html.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Attila",
-    "last_opened_file_path": "F:/Repository/WebTerv/WebProjekt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.booking.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.races.html.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Attila&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Repository/WebTerv/WebProjekt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Repository\WebTerv\WebProjekt\pages" />
@@ -73,8 +70,19 @@
       <workItem from="1709240817556" duration="119000" />
       <workItem from="1709240938000" duration="10882000" />
       <workItem from="1709292368580" duration="19301000" />
-      <workItem from="1710307202136" duration="2203000" />
+      <workItem from="1710307202136" duration="2673000" />
+      <workItem from="1710614358995" duration="2508000" />
+      <workItem from="1711564312278" duration="2141000" />
     </task>
+    <task id="LOCAL-00001" summary="bookingfinish">
+      <option name="closed" value="true" />
+      <created>1710316909641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710316909641</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
