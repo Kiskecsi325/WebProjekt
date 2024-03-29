@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="../images/icon.png">
     <title>Időpont Foglalás</title>
 </head>
 
@@ -117,12 +118,8 @@
 
 
                         <label for="terms" class="checkbox-label">
-                            <div>
                                 <input type="checkbox" id="terms" name="terms" required>
-                            </div>
-                            <div id="feltetel">
-                                <p>Elfogadom a <a href="#">foglalási feltételeket</a></p>
-                            </div>
+                                Elfogadom a <a href="#">foglalási feltételeket</a>
                         </label>
 
                         <button class="btn" type="submit">Küldés</button>
@@ -134,45 +131,46 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Nap</th>
-                            <th>Nyitás</th>
-                            <th>Zárás</th>
+                            <th id="Nap">Nap</th>
+                            <th id="Nyitás">Nyitás</th>
+                            <th id="Zárás">Zárás</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td headers="day">Hétfő</td>
-                            <td headers="start">9:00</td>
-                            <td headers="end">18:00</td>
+                            <td headers="Nap">Hétfő</td>
+                            <td headers="Nyitás">9:00</td>
+                            <td headers="Zárás">18:00</td>
                         </tr>
                         <tr>
-                            <td headers="day">Kedd</td>
-                            <td headers="open">9:00</td>
-                            <td headers="close">18:00</td>
+                            <td headers="Nap">Kedd</td>
+                            <td headers="Nyitás">9:00</td>
+                            <td headers="Zárás">18:00</td>
                         </tr>
                         <tr>
-                            <td headers="day">Szerda</td>
-                            <td headers="open">9:00</td>
-                            <td headers="close">18:00</td>
+                            <td headers="Nap">Szerda</td>
+                            <td headers="Nyitás">9:00</td>
+                            <td headers="Zárás">18:00</td>
                         </tr>
                         <tr>
-                            <td headers="day">Csütörtök</td>
-                            <td headers="open">9:00</td>
-                            <td headers="close">18:00</td>
+                            <td headers="Nap">Csütörtök</td>
+                            <td headers="Nyitás">9:00</td>
+                            <td headers="Zárás">18:00</td>
                         </tr>
                         <tr>
-                            <td headers="day">Péntek</td>
-                            <td headers="open">9:00</td>
-                            <td headers="close">17:00</td>
+                            <td headers="Nap">Péntek</td>
+                            <td headers="Nyitás">9:00</td>
+                            <td headers="Zárás">17:00</td>
                         </tr>
                         <tr>
-                            <td headers="day">Szombat</td>
-                            <td headers="open">10:00</td>
-                            <td headers="close">14:00</td>
+                            <td headers="Nap">Szombat</td>
+                            <td headers="Nyitás">10:00</td>
+                            <td headers="Zárás">14:00</td>
                         </tr>
                         <tr>
-                            <td headers="day" colspan="2">Vasárnap</td>
-                            <td headers="close" colspan="2">Zárva</td>
+                            <td headers="Nap">Vasárnap</td>
+                            <td headers="Nap">10:00</td>
+                            <td headers="Zárás">14:00</td>
                         </tr>
                     </tbody>
                 </table>
