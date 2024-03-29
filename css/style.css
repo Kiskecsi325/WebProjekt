@@ -13,25 +13,26 @@
     /* dark #0B2545 */
 }
 
-:root{
+:root {
 
     --red-color: #B80C09;
     --primery-color: #F1F6F7;
     --secundary-color: #141301;
-    --third-color:#B7B5B3;
+    --third-color: #B7B5B3;
     --background-color: #f2f2f2;
-    
+
 }
 
-.dark-theme{
+.dark-theme {
     --primery-color: #141301;
     --secundary-color: #F1F6F7;
-    --third-color:#5e5e5e;
-    --background-color:#24241f;
+    --third-color: #5e5e5e;
+    --background-color: #24241f;
 }
 
 
 /* ----------navbar------------- */
+
 
 nav {
     width: 100%;
@@ -42,7 +43,7 @@ nav {
 }
 
 nav ul {
-    background-color:var(--red-color);
+    background-color: var(--red-color);
     width: 100%;
     list-style: none;
     display: flex;
@@ -63,7 +64,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color:#F1F6F7;
+    background-color: #F1F6F7;
     color: var(--red-color);
 }
 
@@ -81,8 +82,8 @@ nav li:first-child {
     margin-right: auto;
 }
 
-#darkModeSwitch{
-    width: 30px ;
+#darkModeSwitch {
+    width: 30px;
     cursor: pointer;
     margin: 10px;
 }
@@ -118,7 +119,7 @@ nav li:first-child {
     position: relative;
     width: 100%;
     padding: 60px 100px;
-    background-color:var(--primery-color);
+    background-color: var(--primery-color);
 }
 
 .contactUs .title {
@@ -137,6 +138,7 @@ nav li:first-child {
 .map {
     grid-area: map;
 }
+
 .map iframe {
     width: 100%;
     height: 100%;
@@ -144,7 +146,7 @@ nav li:first-child {
 
 .contact {
     padding: 10px;
-  
+
 }
 
 .box {
@@ -157,9 +159,10 @@ nav li:first-child {
         "form map";
     grid-gap: 20px;
     margin-top: 20px;
-    
+
 
 }
+
 .form {
     grid-area: form;
 }
@@ -199,7 +202,7 @@ nav li:first-child {
     color: var(--red-color);
 }
 
-.inputBox span{
+.inputBox span {
     color: var(--secundary-color);
     margin-top: 10px;
     margin-bottom: 5px;
@@ -232,13 +235,14 @@ nav li:first-child {
     margin-bottom: 10px;
 }
 
-.inputBox::placeholder{
+.inputBox::placeholder {
     color: var(--third-color);
 }
+
 .btn {
     font-size: 18px;
     font-weight: 400;
-    background:  var(--red-color);
+    background: var(--red-color);
     width: 160px;
     padding: 10px 20px;
     text-align: center;
@@ -284,7 +288,7 @@ nav li:first-child {
 .info .infoBox div span {
     min-width: 40px;
     height: 40px;
-    background-color:  var(--third-color);
+    background-color: var(--third-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,15 +297,17 @@ nav li:first-child {
     margin: 0px 20px;
 }
 
-.sci{
+.sci {
     margin-top: 40px;
     display: flex;
 }
-.sci li{
+
+.sci li {
     list-style: none;
     margin-left: 25px;
 }
-.sci a:hover{
+
+.sci a:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
@@ -309,8 +315,9 @@ nav li:first-child {
 
 .info div a {
     text-decoration: none;
-    color:#EEF4ED;
+    color: #EEF4ED;
 }
+
 .info div a:hover {
     text-decoration: none;
     color: #EEF4ED;
@@ -326,7 +333,8 @@ nav li:first-child {
 @media(max-width: 899px) {
 
     nav {
-        position: fixed; /* hozzáadott tulajdonság */
+        position: fixed;
+        /* hozzáadott tulajdonság */
         z-index: 998;
     }
 
@@ -338,25 +346,28 @@ nav li:first-child {
         display: block;
         color: #F1F6F7;
         cursor: pointer;
-        background-color: var(--red-color); /* Piros háttérszín */
+        background-color: var(--red-color);
+        /* Piros háttérszín */
     }
+
     .menu-button:hover {
         display: block;
-      
-        background-color: var(--red-color); /* Piros háttérszín */
+
+        background-color: var(--red-color);
+        /* Piros háttérszín */
 
     }
 
     .contactUs {
         padding: 20px;
     }
- 
+
 
     .box {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
-            
+
             "form"
             "info"
             "map";
@@ -374,16 +385,16 @@ nav li:first-child {
         flex-direction: column;
     }
 
-    .input{
+    .input {
         background-color: var(--third-color);
     }
 
     .inputBox {
         width: 100%;
-        
-    }
 
     }
+
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -391,6 +402,7 @@ body {
     padding: 0;
 
 }
+
 h1 {
     text-align: center;
 }
@@ -398,28 +410,41 @@ h1 {
 main {
     flex: 1;
     padding-top: 0px;
+    background-color: var(--primery-color);
 }
+
 form {
     margin: auto;
-    background-color: var(--background-color);
+    background-color: var(--third-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+th {
+    color: var(--secundary-color);
+}
+
 label {
+    color: var(--secundary-color);
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 16px;
     box-sizing: border-box;
-    border: 1px solid var(--third-color);
+    border: 1px solid var(--secundary-color);
 }
+
+legend {
+    color: var(--secundary-color);
+}
+
 
 button {
     background-color: #4CAF50;
@@ -428,19 +453,19 @@ button {
     border: none;
     border-radius: 5px;
 }
+
 .form-group {
     display: flex;
     align-items: center;
     margin: 10px;
     color: var(--third-color);
 }
-input{
-    color:  var(--secundary-color);
-}
+
 .form-group label {
     margin-right: 10px;
     width: 200px;
 }
+
 .checkbox-label {
     display: flex;
     align-items: center;
@@ -449,28 +474,34 @@ input{
 }
 
 .checkbox-label input {
-    margin:10px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
 }
 
 .checkbox-label a {
     color: #0B2545;
     text-decoration: underline;
 }
-#feltetel{
+
+#feltetel {
     margin-left: 10px;
 }
-#formtable{
+
+#formtable {
     padding: 0% 5%;
 }
+
 @media (min-width: 900px) {
     #formtable {
         display: flex;
         justify-content: space-between;
     }
-    form, table {
+
+    form,
+    table {
         width: 100%;
     }
 }
+
 footer {
     background-color: #333;
     color: #fff;
@@ -486,11 +517,12 @@ table {
     margin-top: 20px;
     height: 400px;
     overflow-y: auto;
-    background-color:  var(--third-color);
+    background-color: var(--third-color);
 
 }
 
-th, td {
+th,
+td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -499,25 +531,28 @@ th, td {
 th {
     background-color: var(--primery-color);
 }
-#backimg{
+
+#backimg {
     max-width: 100%;
     margin: 0;
     position: relative;
 }
-.name{
+
+.name {
     display: flex;
 }
-.formRightElement{
+
+.formRightElement {
     padding-left: 10px;
 }
 
-.map{
-    border:0;
+.map {
+    border: 0;
 }
 
 /* ------ service card --- */
 
-.card-container{
+.card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -525,38 +560,43 @@ th {
     min-width: 250px;
 
 }
-.card{
-    width:325px;
+
+.card {
+    width: 325px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
     margin: 20px;
     background-color: var(--background-color);
-    
+
 }
-.card img{
+
+.card img {
     width: 100%;
     height: 200px;
 }
 
-.card-content{
+.card-content {
     padding: 16px;
-    
+
 }
- h3{
+
+h3 {
     font-size: 28px;
     margin-bottom: 8px;
     color: var(--secundary-color);
 
 }
-.card-content p{
+
+.card-content p {
     color: var(--secundary-color);
     font-size: 16px;
     margin-bottom: 16px;
     line-height: 1.3;
-    
+
 }
-.card-content .btn{
+
+.card-content .btn {
     margin-top: 16px;
-    
+
 }
