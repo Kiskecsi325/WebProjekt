@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d66aaf8-6c15-421c-8f17-0f314f65f058" name="Changes" comment="test2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2d66aaf8-6c15-421c-8f17-0f314f65f058" name="Changes" comment="icon+races">
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/booking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/champs.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/champs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/service.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +80,7 @@
       <workItem from="1710307202136" duration="2673000" />
       <workItem from="1710614358995" duration="2508000" />
       <workItem from="1711564312278" duration="7065000" />
-      <workItem from="1711739231491" duration="4452000" />
+      <workItem from="1711739231491" duration="4791000" />
     </task>
     <task id="LOCAL-00001" summary="bookingfinish">
       <option name="closed" value="true" />
@@ -94,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710316909641</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="icon+races">
+      <option name="closed" value="true" />
+      <created>1711746578804</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711746578804</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bookingfinish" />
     <MESSAGE value="test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="test2" />
+    <MESSAGE value="icon+races" />
+    <option name="LAST_COMMIT_MESSAGE" value="icon+races" />
   </component>
 </project>

@@ -616,3 +616,13 @@ h3 {
     height: 200px; /* Adjust as needed */
     object-fit: cover;
 }
+.box2{
+    position: relative;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+        "form info"
+        "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
