@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d66aaf8-6c15-421c-8f17-0f314f65f058" name="Changes" comment="icon+races">
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+    <list default="true" id="2d66aaf8-6c15-421c-8f17-0f314f65f058" name="Changes" comment="icon+races2">
+      <change afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/process.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/booking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/champs.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/champs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/service.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,6 +35,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -38,11 +48,12 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.booking.html.executor": "Run",
-    "JavaScript Debug.races.html.executor": "Debug",
+    "JavaScript Debug.races.html.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Attila",
-    "last_opened_file_path": "F:/ati/Gokart/Weblap/uj/gokart web/2023-as/index.html",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "F:/Repository/WebTerv/WebProjekt",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -66,6 +77,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14475.35" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -81,6 +99,7 @@
       <workItem from="1710614358995" duration="2508000" />
       <workItem from="1711564312278" duration="7065000" />
       <workItem from="1711739231491" duration="4791000" />
+      <workItem from="1713299500084" duration="8192000" />
     </task>
     <task id="LOCAL-00001" summary="bookingfinish">
       <option name="closed" value="true" />
