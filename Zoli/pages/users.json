@@ -1,0 +1,37 @@
+{
+    "users": [
+        {
+            "username": "Attila",
+            "password": "$2y$10$1KiBnW82LBfHinByDqOCP.edUJmD66zhDDakQFawepKd2RGGWomqe",
+            "age": "21",
+            "gender": "F",
+            "role": "user",
+            "hobbies": [
+                "programozás",
+                "alvás"
+            ]
+        },
+        {
+            "username": "Tamas",
+            "password": "$2y$10$I1KJLt8Lkk8uKX0qbToHvenfYnOz0bBfv2xSOcPUwsVOYBiCZavBm",
+            "age": "33",
+            "gender": "F",
+            "role": "admin",
+            "hobbies": [
+                "programozás",
+                "alvás"
+            ]
+        },
+        {
+            "username": "Anna",
+            "password": "$2y$10$ubPiaf.MZc..WOeU2ZjMHu4n7h5f2EUGt3y9c3t4fCx01OPE.3Tza",
+            "age": "19",
+            "gender": "N",
+            "role": "user",
+            "hobbies": [
+                "főzés",
+                "mémnézegetés"
+            ]
+        }
+    ]
+}
