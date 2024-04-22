@@ -46,6 +46,36 @@ $fajlnev = $_FILES["profile-pic"]["name"];
       <input type="file" id="file-upload" name="profile-pic" accept="image/*"/> <br/>
       <input type="submit" name="upload-btn" value="Feltöltés"/>
     </form>
+      <?php
+      // JSON fájl beolvasása
+      $file_content = file_get_contents('users.json');
+
+      // JSON dekódolása asszociatív tömbbe
+      $users = json_decode($file_content, true);
+
+      // Ellenőrzés, hogy a dekódolás sikeres volt-e
+      if ($users === null) {
+          die("Hiba történt a JSON fájl dekódolása során.");
+      }
+
+      // Táblázat fejléce
+      echo "<table border='1'>";
+      echo "<tr><th>Felhasználónév</th><th>Szül.Dátum</th><th>Nem</th><th>Szerepkör</th><th>Hobbik</th></tr>";
+
+      // Felhasználók adatainak megjelenítése a táblázatban
+      foreach ($users['users'] as $user) {
+          echo "<tr>";
+          echo "<td>" . $user['username'] . "</td>";
+          echo "<td>" . $user['age'] . "</td>";
+          echo "<td>" . $user['gender'] . "</td>";
+          echo "<td>" . $user['role'] . "</td>";
+          echo "<td>" . implode(", ", $user['hobbies']) . "</td>"; // Hobbikat összefűzzük vesszővel
+          echo "</tr>";
+      }
+
+      echo "</table>";
+      ?>
+
   </div>
 
   <?php include_once "footer.php"; ?>

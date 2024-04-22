@@ -32,6 +32,72 @@
                 "főzés",
                 "mémnézegetés"
             ]
+        },
+        {
+            "username": "almafa",
+            "password": "$2y$10$2B2C7677xj1cSsDS25\/2D..u6Bxajn0Qam4AdngtAb3tBMWN6fSQG",
+            "age": "2020-01-15",
+            "gender": "F",
+            "role": "user",
+            "hobbies": [
+                "programozás",
+                "Versenyzés"
+            ]
+        },
+        {
+            "username": "asddsa",
+            "password": "$2y$10$SEZs3xtZb8brZGb6nW3AYuKgCQXOX9nXxAes1PLBquuXHwPGuUKja",
+            "age": "2024-04-03",
+            "gender": "F",
+            "role": "user",
+            "hobbies": [
+                "programozás",
+                "Autózás"
+            ]
+        },
+        {
+            "username": "asddsa",
+            "password": "$2y$10$2FqL8Rx36wOKBSTB8THVJ.cN4jqch81no6nSB9ydlARRHwPRL4mdy",
+            "age": "2024-04-03",
+            "gender": "F",
+            "role": "user",
+            "hobbies": [
+                "programozás",
+                "Autózás"
+            ]
+        },
+        {
+            "username": "asddsa",
+            "password": "$2y$10$22kpuGoXm3Owm4xfzt470.I5ql22kEWcXRgORO9mQbFSyUSSCVMNu",
+            "age": "2024-04-03",
+            "gender": "F",
+            "role": "user",
+            "hobbies": [
+                "programozás",
+                "Autózás"
+            ]
+        },
+        {
+            "username": "asddsa",
+            "password": "$2y$10$8nrGd79JoGWiQsGZelN1zeHFg7Yv23f6c0b2dPY7GVEG2QOCrvEmq",
+            "age": "2024-04-03",
+            "gender": "F",
+            "role": "user",
+            "hobbies": [
+                "programozás",
+                "Autózás"
+            ]
+        },
+        {
+            "username": "sad",
+            "password": "$2y$10$7p1pqHGd.I4tnI3HmufoROJetpxVKLZTHMzOMCIBJzR7ynyB5Jf1O",
+            "age": "2024-04-11",
+            "gender": "E",
+            "role": "user",
+            "hobbies": [
+                "Quadozás",
+                "Motorozás"
+            ]
         }
     ]
 }
