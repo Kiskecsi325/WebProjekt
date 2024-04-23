@@ -1,100 +1,26 @@
 {
     "users": [
         {
-            "username": "Attila",
-            "password": "$2y$10$1KiBnW82LBfHinByDqOCP.edUJmD66zhDDakQFawepKd2RGGWomqe",
-            "age": "21",
-            "gender": "F",
-            "role": "user",
-            "hobbies": [
-                "programozás",
-                "alvás"
-            ]
-        },
-        {
-            "username": "Tamas",
-            "password": "$2y$10$I1KJLt8Lkk8uKX0qbToHvenfYnOz0bBfv2xSOcPUwsVOYBiCZavBm",
-            "age": "33",
-            "gender": "F",
+            "username": "admin",
+            "password": "$2y$10$\/S.MHHFWjG6PLJOb5tSY\/.mJPBo\/N\/qQrv7wTYcdWvqgEkddWCXKy",
+            "age": "1983-05-15",
+            "gender": "P",
             "role": "admin",
             "hobbies": [
-                "programozás",
-                "alvás"
-            ]
-        },
-        {
-            "username": "Anna",
-            "password": "$2y$10$ubPiaf.MZc..WOeU2ZjMHu4n7h5f2EUGt3y9c3t4fCx01OPE.3Tza",
-            "age": "19",
-            "gender": "N",
-            "role": "user",
-            "hobbies": [
-                "főzés",
-                "mémnézegetés"
-            ]
-        },
-        {
-            "username": "almafa",
-            "password": "$2y$10$2B2C7677xj1cSsDS25\/2D..u6Bxajn0Qam4AdngtAb3tBMWN6fSQG",
-            "age": "2020-01-15",
-            "gender": "F",
-            "role": "user",
-            "hobbies": [
-                "programozás",
+                "Autózás",
                 "Versenyzés"
             ]
         },
         {
-            "username": "asddsa",
-            "password": "$2y$10$SEZs3xtZb8brZGb6nW3AYuKgCQXOX9nXxAes1PLBquuXHwPGuUKja",
-            "age": "2024-04-03",
-            "gender": "F",
+            "username": "Attila",
+            "password": "$2y$10$QqyfRffaVUIVkROWjsuaLuhTHtbKosSygkeb671Ui2FY2QcttWdzK",
+            "age": "2010-05-15",
+            "gender": "P",
             "role": "user",
             "hobbies": [
                 "programozás",
-                "Autózás"
-            ]
-        },
-        {
-            "username": "asddsa",
-            "password": "$2y$10$2FqL8Rx36wOKBSTB8THVJ.cN4jqch81no6nSB9ydlARRHwPRL4mdy",
-            "age": "2024-04-03",
-            "gender": "F",
-            "role": "user",
-            "hobbies": [
-                "programozás",
-                "Autózás"
-            ]
-        },
-        {
-            "username": "asddsa",
-            "password": "$2y$10$22kpuGoXm3Owm4xfzt470.I5ql22kEWcXRgORO9mQbFSyUSSCVMNu",
-            "age": "2024-04-03",
-            "gender": "F",
-            "role": "user",
-            "hobbies": [
-                "programozás",
-                "Autózás"
-            ]
-        },
-        {
-            "username": "asddsa",
-            "password": "$2y$10$8nrGd79JoGWiQsGZelN1zeHFg7Yv23f6c0b2dPY7GVEG2QOCrvEmq",
-            "age": "2024-04-03",
-            "gender": "F",
-            "role": "user",
-            "hobbies": [
-                "programozás",
-                "Autózás"
-            ]
-        },
-        {
-            "username": "sad",
-            "password": "$2y$10$7p1pqHGd.I4tnI3HmufoROJetpxVKLZTHMzOMCIBJzR7ynyB5Jf1O",
-            "age": "2024-04-11",
-            "gender": "E",
-            "role": "user",
-            "hobbies": [
+                "Autózás",
+                "Versenyzés",
                 "Quadozás",
                 "Motorozás"
             ]

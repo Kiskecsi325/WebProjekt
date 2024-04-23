@@ -64,8 +64,8 @@ class UserManager
             }
         }
 
-        if (strlen($password) < 5)
-            $hibak[] = "A jelszónak legalább 5 karakter hosszúnak kell lennie!";
+        if (strlen($password) < 8)
+            $hibak[] = "A jelszónak legalább 8 karakter hosszúnak kell lennie!";
 
         if ($password !== $password2)
             $hibak[] = "A jelszó és az ellenőrző jelszó nem egyezik!";
@@ -111,7 +111,7 @@ class UserManager
         return $_SESSION["user"];
     }
 
-    function update_user_basicdata(string $username, $age, $gender, $role, $hobbies): array
+    function update_user_basicdata(string $username, $age, $gender, $role, $email,$hobbies): array
     {
         $user_data = $this->find_user_by_username($username);
         $hibak=[];
@@ -127,6 +127,7 @@ class UserManager
                     "password" => $user_data["password"],
                     "age" => $age,
                     "gender" => $gender,
+                    "email" => $email,
                     "role" => "user",
                     "hobbies" => $hobbies,
                 ];
@@ -161,6 +162,7 @@ class UserManager
                     "age" => $user_data["age"],
                     "gender" => $user_data["gender"],
                     "role" =>  $user_data["role"],
+                    "email" => $user_data["email"],
                     "hobbies" => $user_data["hobbies"],
                 ];
                 // elmentjük a kibővített $fiokok tömböt a users.json fájlba
