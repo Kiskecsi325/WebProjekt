@@ -186,7 +186,7 @@ nav li:first-child {
 
 .sendButton {
     background-color: var(--red-color);
-    color: var();
+    color: white;
     height: 30px;
     border-radius: 5px;
     align-content: center;
@@ -645,7 +645,7 @@ h3 {
     padding-left: 18%;
     text-align: left;
     color: var(--secundary-color);
-    transition: .8;
+    transition: 0.8;
     opacity: 0;
     animation: slideright 1s ease forwards;
     animation-delay: 1.4s;

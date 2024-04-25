@@ -52,14 +52,19 @@ class UserManager
         session_destroy();
     }
 
-    function singup(string $username, string $password, string $password2, $age, $gender, $role, $hobbies): array
+    function singup( $username,$password,$password2, $age, $email, $level, $role, $hobbies): array
     {
         $fiokok = load_users("users.json");
         $hibak = [];
         foreach ($fiokok["users"] as $fiok) {
-            if ($fiok["felhasznalonev"] === $username) {
+            if ($fiok["username"] === $username) {
 
                 $hibak[] = "A felhasználónév már foglalt!";
+                break;
+            }
+
+            if($fiok["email"] === $email) {
+                $hibak[] = "Az email cím már foglalt ";
                 break;
             }
         }
@@ -80,13 +85,16 @@ class UserManager
                 "username" => $username,
                 "password" => $jelszo,
                 "age" => $age,
-                "gender" => $gender,
+                "email" => $email,
+                "level" => $level,
                 "role" => "user",
                 "hobbies" => $hobbies,
             ];
             // elmentjük a kibővített $fiokok tömböt a users.json fájlba
             save_users("users.json", $fiok);
             header("Location: login.php");
+
+            
 
         }
         return $hibak;
@@ -106,12 +114,13 @@ class UserManager
         file_put_contents("users.json", $json_data);
     }
 
+
     function current_user()
     {
         return $_SESSION["user"];
     }
 
-    function update_user_basicdata(string $username, $age, $gender, $role, $email,$hobbies): array
+    function update_user_basicdata(string $username, $age, $email, $level, $hobbies): array
     {
         $user_data = $this->find_user_by_username($username);
         $hibak=[];
@@ -126,13 +135,15 @@ class UserManager
                     "username" => $username,
                     "password" => $user_data["password"],
                     "age" => $age,
-                    "gender" => $gender,
                     "email" => $email,
+                    "level" => $level,
                     "role" => "user",
                     "hobbies" => $hobbies,
                 ];
                 // elmentjük a kibővített $fiokok tömböt a users.json fájlba
                 save_users("users.json", $fiok);
+                $this->login($username,"password");
+                header("Location: profile2.php");
             }
             return $hibak;
         }
@@ -160,9 +171,9 @@ class UserManager
                     "username" => $username,
                     "password" => $jelszo,
                     "age" => $user_data["age"],
-                    "gender" => $user_data["gender"],
-                    "role" =>  $user_data["role"],
+                    "level" => $user_data["level"],
                     "email" => $user_data["email"],
+                    "role" =>  $user_data["role"],
                     "hobbies" => $user_data["hobbies"],
                 ];
                 // elmentjük a kibővített $fiokok tömböt a users.json fájlba

@@ -40,7 +40,7 @@ class header
             echo ' <li class="hideOnMobile"><a href="champs.php"';if ($this->current_page === 'champs.php')echo 'class="active"';
             echo '>Versenyek</a></li>';echo ' <li class="hideOnMobile"><a href="service.php"'; if ($this->current_page === 'service.php')echo 'class="active"'; echo '>Szolgáltatások</a></li>';
             if($this->user["role"]==='user'){
-            echo ' <li class="hideOnMobile"><a href="profile.php"'; if ($this->current_page === 'profile.php')echo 'class="active"'; echo '>Profil</a></li>';
+            echo ' <li class="hideOnMobile"><a href="profile2.php"'; if ($this->current_page === 'profile.php')echo 'class="active"'; echo '>Profil</a></li>';
             }
            // if($this->user["role"]==='admin'){
                 echo'<li class="hideOnMobile"><a href="users.php"'; if ($this->current_page === 'users.php')echo 'class="active"'; echo '>Felhasználók</a></li>';
@@ -65,7 +65,7 @@ class header
             echo ' <li ><a href="champs.php"';if ($this->current_page === 'champs.php')echo 'class="active"';echo '>Versenyek foglalás</a></li>';
             echo ' <li ><a href="service.php"';if ($this->current_page === 'service.php')echo 'class="active"';echo '>Szolgáltatások foglalás</a></li>';
             if($this->user["role"]==='user'){
-                echo ' <li ><a href="profile.php"';if ($this->current_page === 'profile.php')echo 'class="active"';echo '>Profil</a></li>';
+                echo ' <li ><a href="profile2.php"';if ($this->current_page === 'profile.php')echo 'class="active"';echo '>Profil</a></li>';
             }
             echo'<li><a href="users.php"'; if ($this->current_page === 'users.php')echo 'class="active"'; echo '>Felhasználók</a></li>';
             echo ' <li ><a href="logout.php">Kijelentkezés</a></li>';

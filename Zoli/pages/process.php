@@ -18,7 +18,7 @@ if (isset($_FILES["profile-pic"])) {
         // Fájl méret ellenőrzése (30 MB-nál kisebb legyen)
         if ($_FILES["profile-pic"]["error"] === 0 && $_FILES["profile-pic"]["size"] <= 31457280) {
             // Új fájlnév összeállítása (felhasználónév + eredeti fájlnév kiterjesztéssel)
-            $uj_fajlnev = $felhasznalonev . "." . $kiterjesztes;
+            $uj_fajlnev = $felhasznalonev . ".jpg" ;
 
             // Célútvonal összeállítása az új fájlnévvel így a kép megfog egyezni a feltöltö nevével.
             $cel = "../images/profilpic/" . $uj_fajlnev;

@@ -2,9 +2,10 @@
     "users": [
         {
             "username": "admin",
-            "password": "$2y$10$\/S.MHHFWjG6PLJOb5tSY\/.mJPBo\/N\/qQrv7wTYcdWvqgEkddWCXKy",
-            "age": "1983-05-15",
-            "gender": "P",
+            "password": "$2y$10$0RVk6FQEUCC5d8HVq5etSubrSpfwQxmSNWsCQalpbBUVxWNgA6VEe",
+            "age": "20",
+            "email": "admin@admin.hu",
+            "level": "P",
             "role": "admin",
             "hobbies": [
                 "Autózás",
@@ -13,9 +14,10 @@
         },
         {
             "username": "Attila",
-            "password": "$2y$10$QqyfRffaVUIVkROWjsuaLuhTHtbKosSygkeb671Ui2FY2QcttWdzK",
-            "age": "2010-05-15",
-            "gender": "P",
+            "password": "$2y$10$FfJ.ALR7gICXAvYn4CbgD.kui23G0jTCRWgmC9IFZhN9FRKtbRN4m",
+            "age": "20",
+            "email": "attila@attila.hu",
+            "level": "P",
             "role": "user",
             "hobbies": [
                 "programozás",
@@ -23,6 +25,20 @@
                 "Versenyzés",
                 "Quadozás",
                 "Motorozás"
+            ]
+        },
+        {
+            "username": "Zoli",
+            "password": "$2y$10$kb8Oo46rkeD2LVYIsKO75eA7SoKcjFw5Tf0ZKdaoAL53Az17UIJKK",
+            "age": "22",
+            "email": "zoli@web.net",
+            "level": "H",
+            "role": "user",
+            "hobbies": [
+                "programozás",
+                "Autózás",
+                "Versenyzés",
+                "Quadozás"
             ]
         }
     ]
