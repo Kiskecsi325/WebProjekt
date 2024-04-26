@@ -13,21 +13,6 @@
             ]
         },
         {
-            "username": "Attila",
-            "password": "$2y$10$FfJ.ALR7gICXAvYn4CbgD.kui23G0jTCRWgmC9IFZhN9FRKtbRN4m",
-            "age": "20",
-            "email": "attila@attila.hu",
-            "level": "P",
-            "role": "user",
-            "hobbies": [
-                "programozás",
-                "Autózás",
-                "Versenyzés",
-                "Quadozás",
-                "Motorozás"
-            ]
-        },
-        {
             "username": "Zoli",
             "password": "$2y$10$kb8Oo46rkeD2LVYIsKO75eA7SoKcjFw5Tf0ZKdaoAL53Az17UIJKK",
             "age": "22",

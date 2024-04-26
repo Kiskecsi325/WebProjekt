@@ -31,7 +31,7 @@ nav {
     background-color: #F1F6F7;
     position: fixed;
     z-index: 1000;
-    transition: .3;
+    transition: .3ms;
     opacity: 0;
     animation: slideTop 1s ease forwards;
 }
@@ -55,7 +55,7 @@ nav a {
     display: flex;
     align-items: center;
     color: #F1F6F7;
-    transition: .3;
+    transition: .3ms;
     opacity: 0;
     animation: slideTop 1s ease forwards;
 }
@@ -199,7 +199,7 @@ nav li:first-child {
 }
 
 .inputBox span {
-    color: var(--secundary-color);
+    color: black;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 500;
@@ -427,7 +427,7 @@ th {
 }
 
 label {
-    color: var(--secundary-color);
+    color: black;
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
@@ -645,7 +645,7 @@ h3 {
     padding-left: 18%;
     text-align: left;
     color: var(--secundary-color);
-    transition: 0.8;
+    transition: 0.8ms;
     opacity: 0;
     animation: slideright 1s ease forwards;
     animation-delay: 1.4s;

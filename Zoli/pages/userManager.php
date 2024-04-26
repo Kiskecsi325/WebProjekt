@@ -104,6 +104,7 @@ class UserManager
     {
         $users = $this->load_users("users.json");
         $newusers = [];
+        $this->delete_Image($username);
         foreach ($users["users"] as $fiok) {              // végigmegyünk a regisztrált felhasználókon
             if ($fiok["username"] != $username) {
                 $newusers[] = $fiok;
@@ -114,6 +115,21 @@ class UserManager
         file_put_contents("users.json", $json_data);
     }
 
+    function delete_Image($username) {
+        $imagePath = "../images/profilpic/$username.jpg";
+
+        // Ellenőrizze, hogy a fájl létezik-e
+        if (file_exists($imagePath)) {
+            // Törölje a fájlt
+            if (unlink($imagePath)) {
+                echo "A(z) $username fájl sikeresen törölve lett.";
+            } else {
+                echo "Hiba történt a(z) $username fájl törlése közben.";
+            }
+        } else {
+            echo "A(z) $username fájl nem található.";
+        }
+    }
 
     function current_user()
     {
