@@ -2,7 +2,6 @@
 session_start();
 
 include 'header.php';
-include "functions.php";              // beágyazzuk a load_users() és save_users() függvényeket tartalmazó PHP fájlt
 include "userManager.php";
 $usermanager = new UserManager();
 $hibak = [];

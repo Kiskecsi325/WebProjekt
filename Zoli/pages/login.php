@@ -1,6 +1,5 @@
 <?php
 session_start();
-include "functions.php";              // a load_users() függvény ebben a fájlban van
 include "userManager.php";
 $uzenet = "";                     // az űrlap feldolgozása után kiírandó üzenet
 

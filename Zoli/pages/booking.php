@@ -27,7 +27,7 @@ if (!isset($_SESSION["user"])) {
 
         <div id="formtable">
             <div class="box">
-                <div id="formbackg">
+                <div class="formbackg" id="formbackg">
                     <form>
                         <div class="name">
                             <div>

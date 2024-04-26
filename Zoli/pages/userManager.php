@@ -1,23 +1,22 @@
 <?php
-
 class UserManager
 {
+
 
     function __construct()
     {
 
     }
 
-    function save_users(string $path, array $data)
-    {
-        $users = load_users($path);
-
+    function save_users(string $path, array $data) {
+        $users = $this->load_users($path);
+    
         $users["users"][] = $data;
-
-        $json_data = json_encode(array_values($users), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-
+    
+        $json_data = json_encode($users, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+    
         file_put_contents($path, $json_data);
-    }
+      }
 
     function load_users(string $path): array
     {
@@ -31,7 +30,7 @@ class UserManager
 
     function login(string $username, string $password)
     {
-        $fiokok = load_users("users.json"); // betöltjük a regisztrált felhasználók adatait, és eltároljuk őket a $fiokok változóban
+        $fiokok = $this->load_users("users.json"); // betöltjük a regisztrált felhasználók adatait, és eltároljuk őket a $fiokok változóban
         foreach ($fiokok["users"] as $fiok) {              // végigmegyünk a regisztrált felhasználókon
             // a bejelentkezés pontosan akkor sikeres, ha az űrlapon megadott felhasználónév-jelszó páros megegyezik egy regisztrált felhasználó belépési adataival
             // a jelszavakat hash alapján, a password_verify() függvénnyel hasonlítjuk össze
@@ -54,7 +53,7 @@ class UserManager
 
     function singup( $username,$password,$password2, $age, $email, $level, $role, $hobbies): array
     {
-        $fiokok = load_users("users.json");
+        $fiokok = $this->load_users("users.json");
         $hibak = [];
         foreach ($fiokok["users"] as $fiok) {
             if ($fiok["username"] === $username) {
@@ -91,7 +90,7 @@ class UserManager
                 "hobbies" => $hobbies,
             ];
             // elmentjük a kibővített $fiokok tömböt a users.json fájlba
-            save_users("users.json", $fiok);
+            $this->save_users("users.json", $fiok);
             header("Location: login.php");
 
             
@@ -157,7 +156,7 @@ class UserManager
                     "hobbies" => $hobbies,
                 ];
                 // elmentjük a kibővített $fiokok tömböt a users.json fájlba
-                save_users("users.json", $fiok);
+                $this->save_users("users.json", $fiok);
                 $this->login($username,"password");
                 header("Location: profile2.php");
             }
@@ -193,7 +192,7 @@ class UserManager
                     "hobbies" => $user_data["hobbies"],
                 ];
                 // elmentjük a kibővített $fiokok tömböt a users.json fájlba
-                save_users("users.json", $fiok);
+                $this->save_users("users.json", $fiok);
             }
             return $hibak;
         }

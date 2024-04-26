@@ -25,6 +25,30 @@
                 "Versenyzés",
                 "Quadozás"
             ]
+        },
+        {
+            "username": "Attila",
+            "password": "$2y$10$TjOeLOdUuCLdcxL8TEMuoOr4raS2eJKlT2\/mf7I3z9SVTtQayWVvS",
+            "age": "22",
+            "email": "ss@ss.ji",
+            "level": "H",
+            "role": "user",
+            "hobbies": [
+                "programozás",
+                "Autózás"
+            ]
+        },
+        {
+            "username": "Anna",
+            "password": "$2y$10$pNzzb.dHYHjt9PJ3p2hCMe2dCDCB5wqVp.ZrWNJAS60hPhpYjG4Se",
+            "age": "33",
+            "email": "ss@gg.ko",
+            "level": "H",
+            "role": "user",
+            "hobbies": [
+                "Autózás",
+                "Versenyzés"
+            ]
         }
     ]
 }
