@@ -24,13 +24,12 @@ $header->print_header();
 
     <?php if (isset($_SESSION["user"])) { ?>
 
-        <a class="btn" href="booking.php">Időpont Foglalás</a>
+        <a class="btn" href="booking.php">Időpont foglalás</a>
     <?php } else { ?>
         <a class="btn" href="login.php">Bejelentkezés</a>
     <?php } ?>
 
-    <h1> Gokard <br>excepteur </h1>
-    <p> Sed ut perspiciatis unde
+    <h1> GoKart <br>excepteur </h1>
 </div>
 <img src="../images/gokard2.png" alt="gokard" class="feature-img">
 <?php include_once "footer.php"; ?>

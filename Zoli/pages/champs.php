@@ -14,8 +14,8 @@ $header=new header($current_user,$current_page);
 $header->print_header();
 if (!isset($_SESSION["user"])) {
     // ha a felhasználó nincs belépve (azaz a "user" munkamenet-változó értéke nem került korábban beállításra), akkor a login.php-ra navigálunk
-    header("Location: login.php");
-}
+    header("Location: index.php");
+  }
 ?>
     <main>
         <div>

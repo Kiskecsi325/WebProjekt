@@ -80,7 +80,7 @@ $header->print_header();
         <label>Jelszó*: <h6> (A jelszónak minimum 8 karakternek kell lennie.)</h6> <input type="password" name="jelszo"
                 minlength="8" required /></label> <br />
         <label>Jelszó ismét*: <input type="password" name="jelszo2" minlength="8" required /></label> <br />
-        <label>életkor*: <h6>(18. élet évét betöltött személy regisztrálhat.)</h6> <input type="number" name="eletkor"
+        <label>Életkor*: <h6>(18. élet évét betöltött személy regisztrálhat.)</h6> <input type="number" name="eletkor"
                 value="<?php if (isset($_POST['eletkor']))
                     echo $_POST['eletkor']; ?>" required /></label> <br />
         <label>E-mail cím: <input type="email" name="email"
@@ -88,7 +88,7 @@ $header->print_header();
                     echo $_POST['email']; ?>" required /></label> <br />
 
 
-        <h4>Gokárd szint*:</h4>
+        <h4>Gokart szint*:</h4>
         <label><input type="radio" name="level" value="K" <?php if (isset($_POST['level']) && $_POST['level'] === 'K')
             echo 'checked'; ?> required /> Kezdő</label>
         <label><input type="radio" name="level" value="H" <?php if (isset($_POST['level']) && $_POST['level'] === 'H')
@@ -97,7 +97,7 @@ $header->print_header();
             echo 'checked'; ?> required /> Profi</label> <br />
 
 
-        <h4>Hobbik*</h4>:
+        <h4>Hobbik*:</h4> <p>(legalább 2 hobbit jelölj ki)</p>
         <label><input type="checkbox" name="hobbik[]" value="programozás" <?php if (isset($_POST['hobbik']) && in_array('programozás', $_POST['hobbik']))
             echo 'checked'; ?> /> Programozás</label>
         <label><input type="checkbox" name="hobbik[]" value="Autózás" <?php if (isset($_POST['hobbik']) && in_array('Autózás', $_POST['hobbik']))
@@ -120,7 +120,7 @@ if (isset($siker) && $siker === TRUE) {  // ha nem volt hiba, akkor a regisztrá
     echo "<p>Sikeres regisztráció!</p>";
 } else {                                // az esetleges hibákat kiírjuk egy-egy bekezdésben
     foreach ($hibak as $hiba) {
-        echo "<p class='error'>" . $hiba . "</p>";
+        echo "<p class='error'> <strong>Hiba: </strong>" . $hiba . "</p>";
     }
 }
 

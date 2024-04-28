@@ -19,7 +19,7 @@ if (isset($_POST["login"])) {    // miután az űrlapot elküldték...
       header("Location: index.php");         // ekkor átírjuk a megjelenítendő üzenet szövegét
 
     } else {
-      $uzenet = "Sikertelen belépés! A belépési adatok nem megfelelők!";  // alapból azt feltételezzük, hogy a bejelentkezés sikertelen
+      $uzenet = "Sikertelen belépés! A belépési adatok nem megfelelőek!";  // alapból azt feltételezzük, hogy a bejelentkezés sikertelen
 
     }
   }
@@ -46,7 +46,7 @@ $header->print_header();
         <label>Jelszó: <input type="password" name="jelszo" /></label> <br />
         <input type="submit" name="login" /> <br /><br />
     </form>
-    <?php echo $uzenet . "<br/>"; ?>
+    <?php echo "<p class='error'>" . $uzenet . "</p>";?>
     <img src="../images/gokard2.png" alt="gokard" class="feature-img">
 </div>
 

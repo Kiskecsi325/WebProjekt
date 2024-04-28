@@ -1,0 +1,16 @@
+{
+    "messages": [
+        {
+            "id": "662e75c630f2e",
+            "sender": "Zoli",
+            "receiver": "admin",
+            "message": "Teszt1"
+        },
+        {
+            "id": "662e75d47bce7",
+            "sender": "Zoli",
+            "receiver": "Zoli",
+            "message": "Teszt küldés magamnak"
+        }
+    ]
+}

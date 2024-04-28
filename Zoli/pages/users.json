@@ -3,7 +3,7 @@
         {
             "username": "admin",
             "password": "$2y$10$0RVk6FQEUCC5d8HVq5etSubrSpfwQxmSNWsCQalpbBUVxWNgA6VEe",
-            "age": "20",
+            "age": "25",
             "email": "admin@admin.hu",
             "level": "P",
             "role": "admin",
@@ -14,24 +14,10 @@
         },
         {
             "username": "Zoli",
-            "password": "$2y$10$kb8Oo46rkeD2LVYIsKO75eA7SoKcjFw5Tf0ZKdaoAL53Az17UIJKK",
-            "age": "22",
-            "email": "zoli@web.net",
-            "level": "H",
-            "role": "user",
-            "hobbies": [
-                "programozás",
-                "Autózás",
-                "Versenyzés",
-                "Quadozás"
-            ]
-        },
-        {
-            "username": "Attila",
-            "password": "$2y$10$TjOeLOdUuCLdcxL8TEMuoOr4raS2eJKlT2\/mf7I3z9SVTtQayWVvS",
-            "age": "22",
-            "email": "ss@ss.ji",
-            "level": "H",
+            "password": "$2y$10$PRS3Tbqfq9w6OFOyY2YaeOL15fcqVvG9CUePbbSB5lSvHYtlB5ZVa",
+            "age": "40",
+            "email": "info@valami.hu",
+            "level": "K",
             "role": "user",
             "hobbies": [
                 "programozás",
@@ -39,15 +25,15 @@
             ]
         },
         {
-            "username": "Anna",
-            "password": "$2y$10$pNzzb.dHYHjt9PJ3p2hCMe2dCDCB5wqVp.ZrWNJAS60hPhpYjG4Se",
-            "age": "33",
-            "email": "ss@gg.ko",
+            "username": "Zoli2",
+            "password": "$2y$10$Jsc\/Y\/Qi6j1na4tMQKJekOB3CnvMyEaX4tOkgy3d7DUjvP\/hrP5Fq",
+            "age": "22",
+            "email": "zoli@valami.hu",
             "level": "H",
             "role": "user",
             "hobbies": [
-                "Autózás",
-                "Versenyzés"
+                "Versenyzés",
+                "Quadozás"
             ]
         }
     ]

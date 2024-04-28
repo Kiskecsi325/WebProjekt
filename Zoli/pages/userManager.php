@@ -91,6 +91,7 @@ class UserManager
             ];
             // elmentjük a kibővített $fiokok tömböt a users.json fájlba
             $this->save_users("users.json", $fiok);
+            
             header("Location: login.php");
 
             
@@ -103,7 +104,6 @@ class UserManager
     {
         $users = $this->load_users("users.json");
         $newusers = [];
-        $this->delete_Image($username);
         foreach ($users["users"] as $fiok) {              // végigmegyünk a regisztrált felhasználókon
             if ($fiok["username"] != $username) {
                 $newusers[] = $fiok;
@@ -152,13 +152,12 @@ class UserManager
                     "age" => $age,
                     "email" => $email,
                     "level" => $level,
-                    "role" => "user",
+                    "role" => $user_data["role"],
                     "hobbies" => $hobbies,
                 ];
                 // elmentjük a kibővített $fiokok tömböt a users.json fájlba
                 $this->save_users("users.json", $fiok);
-                $this->login($username,"password");
-                header("Location: profile2.php");
+                session_unset();
             }
             return $hibak;
         }

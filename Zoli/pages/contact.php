@@ -1,6 +1,17 @@
 <?php
 session_start();
 
+include 'messageManager.php';
+$MessageManager=new MessageManager();
+
+if (isset($_POST["send"])) {
+    $sender = $_POST["LastName"] . " " . $_POST["FirstName"]  ;
+    $receiver = "admin";
+    $message = $_POST["text"] . "   " . "email: " . $_POST["email"] . "   " . "tel: " . $_POST["tel"];
+
+    $MessageManager->sendMessage($sender, $receiver, $message);
+
+}
 // Az aktuális oldal URL-jének lekérése
 $current_page = basename($_SERVER['PHP_SELF']);
 // Az aktuális oldal változójának átadása a header fájlnak
@@ -13,7 +24,6 @@ if(isset($_SESSION["user"])){
 $header=new header($current_user,$current_page);
 $header->print_header();
 ?>
-
     <div class="contactUs">
         <div class="title">
             <h2>Lépj kapcsolatba velünk!</h2>
@@ -22,38 +32,38 @@ $header->print_header();
             <div class="contact form">
                 <h3>Küldj üzenetet</h3>
                 <!-- form box -->
-                <form>
+                <form action="contact.php" method="POST">
                     <div class="formBox">
                         <div class="row50">
                             <div class="inputBox">
                                 <span>Vezeték név</span>
-                                <input type="text" placeholder="Minta" required>
+                                <input type="text" name="LastName" placeholder="Minta" required>
                             </div>
                             <div class="inputBox">
                                 <span>Kereszt név</span>
-                                <input type="text" placeholder="János" required>
+                                <input type="text" name="FirstName" placeholder="János" required>
                             </div>
                         </div>
                         <div class="row50">
                             <div class="inputBox">
                                 <span>E-mail cím</span>
-                                <input type="email" placeholder="minta@valami.com"
+                                <input type="email" name="email" placeholder="minta@valami.com"
                                     pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" required>
                             </div>
                             <div class="inputBox">
                                 <span>Telefon</span>
-                                <input type="tel" placeholder="+36301234567"
+                                <input type="tel"  name="tel" placeholder="+36301234567"
                                     pattern="^\+(?:36)(?:20|30|70)\d{3}\d{2}\d{2}$" required>
                             </div>
                         </div>
                         <div class="row100">
                             <div class="inputBox">
                                 <span>Üzenet</span>
-                                <textarea placeholder="ide irhatja üzenetét..." required></textarea>
+                                <textarea name="text" placeholder="ide irhatja üzenetét..." required></textarea>
                             </div>
                         </div>
                         <div>
-                            <button type="submit" id="submint" class="btn"> Küldés</button>
+                            <button type="submit" name="send" id="submint" class="btn"> Küldés</button>
                         </div>
                     </div>
                 </form>

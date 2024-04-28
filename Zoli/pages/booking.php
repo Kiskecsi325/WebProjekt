@@ -15,8 +15,8 @@ $header->print_header();
 
 if (!isset($_SESSION["user"])) {
     // ha a felhasználó nincs belépve (azaz a "user" munkamenet-változó értéke nem került korábban beállításra), akkor a login.php-ra navigálunk
-    header("Location: login.php");
-}
+    header("Location: index.php");
+  }
 ?>
     <main>
         <div>
@@ -62,10 +62,7 @@ if (!isset($_SESSION["user"])) {
                                 <input type="datetime-local" id="reservationDateTime" name="reservationDateTime"
                                     required>
                             </div>
-
                         </div>
-
-
                         <fieldset>
                             <legend>Válassz Gokartot:</legend>
                             <div class="form-group">
@@ -80,24 +77,18 @@ if (!isset($_SESSION["user"])) {
                                 <div class="inp">
                                     <input type="radio" id="option2" name="options" value="option2">
                                 </div>
-
                             </div>
-
                             <div class="form-group">
                                 <label for="option3">Verseny Gokart</label>
                                 <div class="inp">
                                     <input type="radio" id="option3" name="options" value="option3">
                                 </div>
-
                             </div>
                         </fieldset>
-
-
                         <label for="terms" class="checkbox-label">
                             <input type="checkbox" id="terms" name="terms" required>
                             Elfogadom a <a href="#">foglalási feltételeket</a>
                         </label>
-
                         <button class="btn" type="submit">Küldés</button>
                         <button class="btn" type="reset">Alaphelyzet</button>
                     </form>

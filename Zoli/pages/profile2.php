@@ -11,9 +11,14 @@ $current_user = null;
 if (isset($_SESSION["user"])) {
   $current_user = $_SESSION["user"];
 }
-$nev = $_SESSION["user"]["username"] ;
+$nev = $current_user["username"] ;
 $header = new header($current_user, $current_page);
 $header->print_header();
+
+if (!isset($_SESSION["user"])) {
+  // ha a felhasználó nincs belépve (azaz a "user" munkamenet-változó értéke nem került korábban beállításra), akkor a login.php-ra navigálunk
+  header("Location: index.php");
+}
 
 if (isset($_POST["save"])) {
 
@@ -46,7 +51,7 @@ if (isset($_POST["save"])) {
 
   if (count($hibak) === 0) {   // sikeres regisztráció
     $siker = TRUE;
-    header("Location: login.php");
+    header("Location: index.php");
   } else {                    // sikertelen regisztráció
     $siker = FALSE;
 
@@ -58,6 +63,7 @@ if (isset($_POST["delete"])) {
   if (isset($_SESSION["user"])) {
       $username = $_SESSION["user"]["username"];
       $usermanager->delete_users($username);
+      $usermanager->delete_Image($username);
       $usermanager->logout();
       // Például visszairányítás a főoldalra
       echo "A profil sikeresen törölve.";
@@ -75,7 +81,18 @@ if (isset($_POST["delete"])) {
 
   <form action="process.php" method="POST" enctype="multipart/form-data">
        <div class="gallery-item">
-          <?php echo' <img src="../images/profilpic/' . $nev .'.jpg" alt="profile kép">'; ?>
+          <?php 
+          $kep_nev = "{$nev}.jpg";
+          $kep_utvonal = "../images/profilpic/{$kep_nev}";
+           if (file_exists($kep_utvonal )) {
+        // Előzőleg feltöltött kép létezik, megjelenítjük
+          echo '<img src="../images/profilpic/' . $nev .'.jpg" alt="profile kép">';
+        } else {
+        // Előzőleg nem volt feltöltött kép, használjuk az alapértelmezett képet
+        echo '<img src="../images/profilpic/default.jpg" alt="alapértelmezett kép">';
+    }
+        
+    ?>
         </div>
     <label for="file-upload">Profilkép:</label>
     <input type="file" id="file-upload" name="profile-pic" accept="image/*" /> <br />
@@ -90,12 +107,12 @@ if (isset($_POST["delete"])) {
     </script>
 
 <form action="profile2.php" method="POST">
-        <label>Felhasználónév:<?php echo $nev?> </label> <br /> <br />
-        <label>életkor*: <h6>(18. élet évét betöltött személy regisztrálhat.)</h6> <input type="number" name="eletkor" value="<?php echo $_SESSION["user"]["age"]; ?>" required /></label> <br />
+        <label>Felhasználónév: <?php echo $nev?> </label> <br /> <br />
+        <label>Életkor*: <h6>(18. élet évét betöltött személy regisztrálhat.)</h6> <input type="number" name="eletkor" value="<?php echo $_SESSION["user"]["age"]; ?>" required /></label> <br />
         <label>E-mail cím: <input type="email" name="email" value="<?php echo $_SESSION["user"]["email"]; ?>"required /></label> <br />
    
 
-        <h4>Gokárd szint*:</h4>
+        <h4>Gokart szint*:</h4>
         <label><input type="radio" name="level" value="K" <?php if ( $_SESSION["user"]["level"] === "K")
             echo 'checked'; ?> required /> Kezdő</label>
         <label><input type="radio" name="level" value="H" <?php if ( $_SESSION["user"]["level"] === "H")
@@ -104,7 +121,7 @@ if (isset($_POST["delete"])) {
             echo 'checked'; ?> required /> Profi</label> <br />
 
 
-        <h4>Hobbik*</h4>:
+        <h4>Hobbik*:</h4>legalább 2 hobbi legyen bejelölve
         <label><input type="checkbox" name="hobbik[]" value="programozás" <?php if (isset($_SESSION["user"]['hobbies']) && in_array("programozás", $_SESSION["user"]['hobbies']))
             echo 'checked'; ?> /> Programozás</label>
         <label><input type="checkbox" name="hobbik[]" value="Autózás" <?php if (isset($_SESSION["user"]['hobbies']) && in_array("Autózás", $_SESSION["user"]['hobbies'])){
@@ -121,8 +138,8 @@ if (isset($_POST["delete"])) {
   </form>
 </div>
 <?php
+echo'*- kötelező mezők';
 if (isset($siker) && $siker === TRUE) {  // ha nem volt hiba, akkor a regisztráció sikeres
-  $usermanager->login( $username, $password);
   echo "<p>Sikeres Mentés!</p>";
 } else {                                // az esetleges hibákat kiírjuk egy-egy bekezdésben
   foreach ($hibak as $hiba) {
